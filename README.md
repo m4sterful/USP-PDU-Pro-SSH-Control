@@ -49,7 +49,8 @@ Cool, maybe I can use this in a rack after all. I need this device to do a few k
 1. Control the outlets, by number, on command. (COMPLETE)
 2. Tell me the electrical use of the unit on demand. Actually, this is displayed on the screen, but it would be nice to get that remotely as well. (COMPLETE)
 3. Tell me the electrical use of a particular outlet. Again, you can see it on the screen (NOPE)
-4. Run no un-needed services and do not attempt to adopt or alert anything when it starts - basically port 22 should be the only way I talk to this unit. This is a power bar, we need exactly zero other services to get ourselves in trouble with. (BIG NOPE)
+4. Update the firmware, if possible, to a version of OpenWRT that's not 5 years old
+5. Run no un-needed services and do not attempt to adopt or alert anything when it starts - basically port 22 should be the only way I talk to this unit. This is a power bar, we need exactly zero other services to get ourselves in trouble with. (BIG NOPE)
 
 Status - 
 1. The outlets are controlled by the service /bin/powerd. To control an outlet via SSH we just need to edit /var/run/powerd.conf and set the outlet to the correct state, enabled or disabled, then run kill -SIGHUP `pidof powerd`.
