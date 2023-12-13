@@ -30,7 +30,7 @@ Except I wouldn't dare run Unifi in a critical rack or data centre - it's strict
 
 Still, after playing with it for a while I kept thinking - if only this unit was in the now mostly forgotten edgerouter line I could certainly see using this in a proper rack! 
 
-But then again, the unit is just a linux box, isn't it? Let's SSH in and see. Actually, we soon see it's just a customized version of openWRT!
+But then again, the unit is just a linux box, isn't it? Let's SSH in and see. Actually, we soon see it's just a customized version of openWRT! From... 2018?!
 
   ```
 USP-PDU-Pro-US.6.5.59# cat /etc/openwrt_release
