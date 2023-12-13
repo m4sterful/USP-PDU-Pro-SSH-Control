@@ -44,7 +44,7 @@ DISTRIB_DESCRIPTION='LEDE Reboot 17.01.6 r3979-2252731af4'
 DISTRIB_TAINTS='no-all mklibs busybox'
 ```
 
-Looks like it's running dropbear 2020.81. Cool, that means it may be vulnerable to CVE-2021-36369. That's... not amazing on a new commercial product running the latest update.
+Looks like it's running dropbear 2020.81. Cool, that means it may be vulnerable to CVE-2021-36369 (edit: that appears to effect the client rather than the server). That's still not amazing on a new commercial product running the latest update.
 
 If I'm going to use this securely I need to achieve a few key things:
 
