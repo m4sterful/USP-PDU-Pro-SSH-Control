@@ -2,9 +2,9 @@
 Findings regarding controlling a Unifi USP-PDU-PRO via SSH
 
 ## Summary
-You can control the USP-PDU-Pro from SSH and probably disconnect it entirely from reporting back to the Unifi controller. This is a work in progress.
+You can control the USP-PDU-Pro from SSH and probably disconnect it entirely from reporting back to the Unifi controller. This is a work in progress. Make sure that you put the scripts in /etc/persistent or they will be deleted when the unit reboots.
 
-I have collected a number of data sheets and am recording ongoing information about the internals based on disassembly.
+I have collected a number of data sheets and am recording ongoing information about the internals based on disassembly. 
 
 ### Script: get_pwr_usage.sh
 #### Description: gets the current overall power usage on the USP-PDU-Pro
