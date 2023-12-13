@@ -44,7 +44,9 @@ DISTRIB_DESCRIPTION='LEDE Reboot 17.01.6 r3979-2252731af4'
 DISTRIB_TAINTS='no-all mklibs busybox'
 ```
 
-Cool, maybe I can use this in a rack after all. I need this device to do a few key things:
+Looks like it's running dropbear 2020.81. Cool, that means it may be vulnerable to CVE-2021-36369. That's... not amazing on a new commercial product running the latest update.
+
+If I'm going to use this securely I need to achieve a few key things:
 
 1. Control the outlets, by number, on command. (COMPLETE)
 2. Tell me the electrical use of the unit on demand. Actually, this is displayed on the screen, but it would be nice to get that remotely as well. (COMPLETE)
