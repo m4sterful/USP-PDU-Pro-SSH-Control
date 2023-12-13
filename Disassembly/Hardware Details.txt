@@ -1,6 +1,8 @@
 This is an evolving document. Take everything in here with a grain of salt.
 
-The USP-PDU-Pro consists of a number of controllers loosely connected together to acheive its functionality. These are split into the top board, the bottom board, and a daughter board for the front LCD. Each has its own seperate controller - all of different manufacturers and specifications. Each works essentially independantly and likely communicate via SPI or similar interface - TBD. 
+The USP-PDU-Pro consists of a number of controllers loosely connected together to acheive its functionality. These are split into the top board, the bottom board, and a daughter board for the front LCD. 
+
+Each has its own seperate controller - all of different manufacturers and specifications. Each works essentially independantly and likely communicate via SPI or similar interface - TBD. 
 
 On the top board we see a mediatek MT7628AN router-on-a-chip. This includes full wireless 802.1n support, a 10/100 ethernet port, QOS, and a MIPS24KEc 580Mhz CPU. This appears to be the core CPU for this unit. It is connected to an MX25L128 3v EEPROM, which should contain the linux firmware we want to target. The primary power adapter appears to be on this board as well, including a number of supporting analog and discreet components. On the rear of the board are two InnoSwitch3 INN3164C 20W flyback switcher ICs to assist with this.
 
