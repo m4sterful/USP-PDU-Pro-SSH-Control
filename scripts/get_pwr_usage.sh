@@ -1,7 +1,7 @@
 #!/bin/ash
 
 # Execute the command and capture the output
-OUTPUT=$(./lcm-ctrl -t dump)
+OUTPUT=$(/bin/lcm-ctrl -t dump)
 
 # Extract outlet_used and outlet_available using grep and awk
 OUTLET_USED=$(echo "$OUTPUT" | grep -o '"outlet_used": [0-9]*' | awk -F ':' '{print $2}')
