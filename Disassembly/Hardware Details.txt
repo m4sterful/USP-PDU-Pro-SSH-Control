@@ -1,0 +1,11 @@
+This is an evolving document. Take everything in here with a grain of salt.
+
+The USP-PDU-Pro consists of a number of controllers loosely connected together to acheive its functionality. These are split into the top board, the bottom board, and a daughter board for the front LCD. Each has its own seperate controller - all of different manufacturers and specifications. Each works essentially independantly and likely communicate via SPI or similar interface - TBD. 
+
+On the top board we see a mediatek MT7628AN router-on-a-chip. This includes full wireless 802.1n support, a 10/100 ethernet port, QOS, and a MIPS24KEc 580Mhz CPU. This appears to be the core CPU for this unit. It is connected to an MX25L128 3v EEPROM, which should contain the linux firmware we want to target.
+
+On the bottom board is a NuMicro M482 Microcontroller, which contains an ARM m4 CPU with standard interfaces such as UART and SPI. It is connected to two MCP3814 Analog to Digital Converters, which I suspect would be handling electrical usage and actual power on/off work. All of this is connected to a number of relays.
+
+To the right is a dedicated board for the LCD controller, running an STMicro 32F205. For a board that simply runs an LCD, the 32F205 has way more features that we might expect- an ARM M3 CPU, 10/100 ethernet available, I2C, UUART, temperature sensor, USB, SDIO interface and more. 
+
+You'd expect we could run the entire operation from only one of these chips - I suspect we could run Doom on all 3 of these at the same time. I assume this over-engineering was done to encapsulate the different functionality and allow for simple upgrading and seperation of functions.
