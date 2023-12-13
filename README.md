@@ -7,16 +7,18 @@ Script: get_pwr_usage.sh
 Details: gets the current overall power usage on the USP-PDU-Pro
 
 Usage: 
+```
 get_pwr_usage.sh
 35.108W / 1875W
-
+```
 Script: set_outlet.sh
 Details: turns an outlet on or off. 
 
 Usage: 
+```
 set_outlet.sh 5 disabled
 Outlet 5 state updated to disabled.
-
+```
 
 ## Details
 
