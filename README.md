@@ -58,7 +58,7 @@ If I'm going to use this securely I need to achieve a few key things:
 ## Status
 1. This is done. The outlets are controlled by the service /bin/powerd. To control an outlet via SSH we just need to edit /var/run/powerd.conf and set the outlet to the correct state, enabled or disabled, then run
 ```
-kill -SIGHUP `pidof powerd`.
+kill -SIGHUP $(`pidof powerd`)
 ```
 Of course this is easier as a script. I have created one to do that called set_outlet.sh. Simply ssh in and drop the script in your /bin folder, then run the script to change the outlet status. Note that ports 1-4 refer to the USB-C ports! Port 5 is the first outlet.
 
