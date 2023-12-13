@@ -12,10 +12,10 @@ NEW_STATE=$2
 FILE="/var/run/powerd.conf"
 
 # Validate the outlet number
-if ! [[ $OUTLET_NUMBER =~ ^[0-9]+$ ]]; then
-    echo "Error: Outlet number must be an integer."
-    exit 1
-fi
+case $OUTLET_NUMBER in
+    ''|*[!0-9]*) echo "Error: Outlet number must be an integer." ; exit 1 ;;
+esac
+
 
 # Validate the new state
 if [ "$NEW_STATE" != "enabled" ] && [ "$NEW_STATE" != "disabled" ]; then
