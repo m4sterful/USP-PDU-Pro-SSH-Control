@@ -26,7 +26,7 @@ Having excitedly purchased a USP-PDU-Pro, I found it a little difficult to figur
 
 On the one hand, the features are in many ways comparable to the kind of PDU we would find in a data centre, including accurate per-outlet and total power measurement and no less than 16 web controllable outlets (!!). The closest thing I can find to this unit are some by APC and Tripp Lite. I can't find any 15A switched rack PDU of any outlet count available for less than $1000, let alone 16. 
 
-Except I wouldn't dare run Unifi in a critical rack or data centre - it's strictly small to medium office equipment in this author's opinion, and exposes lots of possible holes I don't like to think of. Yet despite the great price for data centre standards, at $373 Canadian It's way too expensive (and feature complete) to use in most homes. 
+Except I wouldn't dare run Unifi in a critical rack or data centre - it's strictly small to medium office equipment in this author's opinion, with a cloud interface that exposes lots of possible holes I don't like to think of. Yet despite the great price for data centre standards, at $373 Canadian It's way too expensive (and feature complete) to use in most homes. 
 
 Still, after playing with it for a while I kept thinking - if only this unit was in the now mostly forgotten edgerouter line I could certainly see using this in a proper rack! 
 
