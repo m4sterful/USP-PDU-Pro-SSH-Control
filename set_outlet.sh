@@ -28,7 +28,7 @@ sed -i "/outlet.${OUTLET_NUMBER}.relay_state=/c\outlet.${OUTLET_NUMBER}.relay_st
 
 if [ $? -eq 0 ]; then
     echo "Outlet $OUTLET_NUMBER state updated to $NEW_STATE."
-    kill -SIGHUP pidof powerd
+    kill -SIGHUP $(pidof powerd)
 else
     echo "Error: Failed to update the state of outlet $OUTLET_NUMBER."
 fi
