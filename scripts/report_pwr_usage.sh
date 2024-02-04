@@ -17,7 +17,7 @@ OUTLET_USED_W=$(awk "BEGIN { printf \"%.2f\", $OUTLET_USED/1000 }")
 OUTLET_AVAILABLE_W=$(echo "$OUTLET_AVAILABLE" | awk '{print $1/1000}')
 
 # Determine the status and message based on outlet_used_w
-if [ "$OUTLET_USED" -lt 800000 ]; then
+if [ "$OUTLET_USED" -lt 1000000 ]; then
     STATUS="up"
 else
     STATUS="down"
