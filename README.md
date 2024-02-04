@@ -14,6 +14,17 @@ Usage:
 get_pwr_usage.sh
 35.108W / 1875W
 ```
+### Script: report_pwr_usage.sh
+#### Description: gets the current overall power usage on the USP-PDU-Pro and reports it via a push request to Uptime Kuma (or your uptime tool of choice).
+
+Usage: 
+```
+1. save report_pwr_usage in /etc/persistent
+2. edit the script, modifying the http URL as needed.
+3. use crontab -e and add * * * * * /etc/persistent/report_pwr_usage to report power usage every minute (or your cron time of choice)
+4. run crond to start cron running (/bin/crond)
+5. Your current electricity use will be pushed to your uptime monitor. Now that's handy!
+```
 ### Script: set_outlet.sh
 #### Description: turns an outlet on or off. 
 
