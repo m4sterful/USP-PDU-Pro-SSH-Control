@@ -23,7 +23,7 @@ Usage:
 2. edit the script, modifying the http URL as needed.
 3. use crontab -e and add * * * * * /etc/persistent/report_pwr_usage to report power usage every minute (or your cron time of choice)
 4. run crond to start cron running (/bin/crond)
-5. Your current electricity use will be pushed to your uptime monitor. Now that's handy!
+5. Your current electricity use will be pushed to your uptime monitor and it will flag down if it goes over 10 amps. Now that's handy!
 ```
 ### Script: set_outlet.sh
 #### Description: turns an outlet on or off. 
