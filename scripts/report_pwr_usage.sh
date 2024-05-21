@@ -3,7 +3,7 @@
 ## add a push monitor to your uptime monitor to report current power usage every few minutes. Save to /etc/persistent/report_pwr_usage.sh and Add this to cron with */5 * * * * /etc/persistent/report_pwr_usage.sh to run every 5 minutes
 
 # Define the API URL
-API_URL="https://<your uptime kuma URL>/api/push/#######?status=${STATUS}&msg=${OUTLET_USED_W}W%20/%20${OUTLET_AVAILABLE_W
+API_URL="https://<your uptime kuma URL>/api/push/#######?status=${STATUS}&msg=${OUTLET_USED_W}W%20/%20${OUTLET_AVAILABLE_W}
 
 # Execute the command and capture the output
 OUTPUT=$(/bin/lcm-ctrl -t dump)
